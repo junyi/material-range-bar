@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
 apply plugin: 'signing'
-apply from: '../maven_push.gradle'
+//apply from: '../maven_push.gradle'
 
 version = "1.0"
 group = "com.appyvet"
