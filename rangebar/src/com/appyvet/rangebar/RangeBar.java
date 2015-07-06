@@ -904,6 +904,14 @@ public class RangeBar extends View {
         return mRightThumb.getTextSize();
     }
 
+    public PinView getLeftPin() {
+        return mLeftThumb;
+    }
+
+    public PinView getRightPin() {
+        return mRightThumb;
+    }
+
 
     // Private Methods /////////////////////////////////////////////////////////
 

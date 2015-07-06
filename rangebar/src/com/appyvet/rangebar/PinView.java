@@ -72,7 +72,7 @@ class PinView extends View {
 
     private float mTextYPadding;
 
-    private Rect mBounds = new Rect();
+    public Rect mBounds = new Rect();
 
     private Resources mRes;
 
