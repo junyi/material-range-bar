@@ -28,7 +28,7 @@ import android.view.View;
  * Represents a thumb in the RangeBar slider. This is the handle for the slider
  * that is pressed and slid.
  */
-class PinView extends View {
+public class PinView extends View {
 
     // Private Constants ///////////////////////////////////////////////////////
 
