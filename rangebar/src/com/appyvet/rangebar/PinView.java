@@ -244,7 +244,7 @@ public class PinView extends View {
             if (mValue.length() > 4) {
                 text = mValue.substring(0, 4);
             }
-            calibrateTextSize(mTextPaint, text, 8, 24, mBounds.width());
+            calibrateTextSize(mTextPaint, text, 8, 50, mBounds.width());
             mTextPaint.getTextBounds(text, 0, text.length(), mBounds);
             mTextPaint.setTextAlign(Paint.Align.CENTER);
             mPin.setColorFilter(mPinFilter);
@@ -265,6 +265,6 @@ public class PinView extends View {
     private static void calibrateTextSize(Paint paint, String text, float min, float max,
                                           float boxWidth) {
         paint.setTextSize(10);
-        paint.setTextSize(Math.max(Math.min((boxWidth / paint.measureText(text)) * 10, max), min));
+        paint.setTextSize((boxWidth / paint.measureText(text)) * 4);
     }
 }
